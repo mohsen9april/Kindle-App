@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0BB27422DD19370015D580 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0BB27322DD19370015D580 /* PageCell.swift */; };
 		EDBF00BF22DB469800BFCC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF00BE22DB469800BFCC7A /* AppDelegate.swift */; };
 		EDBF00C122DB469800BFCC7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF00C022DB469800BFCC7A /* ViewController.swift */; };
 		EDBF00C422DB469800BFCC7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBF00C222DB469800BFCC7A /* Main.storyboard */; };
 		EDBF00C622DB469900BFCC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBF00C522DB469900BFCC7A /* Assets.xcassets */; };
 		EDBF00C922DB469900BFCC7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBF00C722DB469900BFCC7A /* LaunchScreen.storyboard */; };
+		EDBF00D122DB6AC000BFCC7A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF00D022DB6AC000BFCC7A /* Models.swift */; };
+		EDBF00D322DB7F0F00BFCC7A /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF00D222DB7F0F00BFCC7A /* BookCell.swift */; };
+		EDE3EDED22DC782E0076789D /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE3EDEC22DC782E0076789D /* BookPagerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED0BB27322DD19370015D580 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		EDBF00BB22DB469800BFCC7A /* Kindle App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindle App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBF00BE22DB469800BFCC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDBF00C022DB469800BFCC7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		EDBF00C522DB469900BFCC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDBF00C822DB469900BFCC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDBF00CA22DB469900BFCC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDBF00D022DB6AC000BFCC7A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EDBF00D222DB7F0F00BFCC7A /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		EDE3EDEC22DC782E0076789D /* BookPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				EDBF00BE22DB469800BFCC7A /* AppDelegate.swift */,
+				EDBF00D022DB6AC000BFCC7A /* Models.swift */,
 				EDBF00C022DB469800BFCC7A /* ViewController.swift */,
+				EDE3EDEC22DC782E0076789D /* BookPagerController.swift */,
+				EDBF00D222DB7F0F00BFCC7A /* BookCell.swift */,
+				ED0BB27322DD19370015D580 /* PageCell.swift */,
 				EDBF00C222DB469800BFCC7A /* Main.storyboard */,
 				EDBF00C522DB469900BFCC7A /* Assets.xcassets */,
 				EDBF00C722DB469900BFCC7A /* LaunchScreen.storyboard */,
@@ -135,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBF00D322DB7F0F00BFCC7A /* BookCell.swift in Sources */,
+				EDE3EDED22DC782E0076789D /* BookPagerController.swift in Sources */,
+				ED0BB27422DD19370015D580 /* PageCell.swift in Sources */,
+				EDBF00D122DB6AC000BFCC7A /* Models.swift in Sources */,
 				EDBF00C122DB469800BFCC7A /* ViewController.swift in Sources */,
 				EDBF00BF22DB469800BFCC7A /* AppDelegate.swift in Sources */,
 			);
