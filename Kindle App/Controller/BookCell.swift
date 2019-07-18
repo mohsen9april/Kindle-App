@@ -15,6 +15,24 @@ class bookCell: UITableViewCell {
             coverImageView.image = didSetbook?.image
             titleLabel.text = didSetbook?.title
             authorLabel.text = didSetbook?.author
+            
+            //Set CoverImage in Cell
+            guard let coverImageUrl = didSetbook?.coverImageUrl else { return }
+            guard let url = URL(string: coverImageUrl) else { return }
+            coverImageView.image = nil
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    print("Failed to retrieve coverimageURL")
+                    debugPrint(error.localizedDescription)
+                    return
+                }
+                guard let imageData = data else { return }
+                guard let image  = UIImage(data: imageData) else { return }
+                DispatchQueue.main.async {
+                    self.coverImageView.image = image
+                }
+            }.resume()
+            
         }
     }
     
@@ -27,20 +45,24 @@ class bookCell: UITableViewCell {
     
     let titleLabel : UILabel = {
        let label = UILabel()
-        label.text = "this is a test for BookCell I wrtie more Text for test !"
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let authorLabel  :UILabel = {
        let label = UILabel()
-        label.text = "this is a text test for author label !"
+        label.textColor = UIColor.lightGray
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style , reuseIdentifier: reuseIdentifier)
+        
+        backgroundColor = .clear
         
         addSubview(coverImageView)
         coverImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true

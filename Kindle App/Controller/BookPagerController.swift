@@ -15,7 +15,6 @@ class BookPagerController : UICollectionViewController , UICollectionViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
-        //navigationItem.title = "Book"
         navigationItem.title = self.book?.title
         
         collectionView.register(PageCell.self, forCellWithReuseIdentifier: "CellId")

@@ -43,6 +43,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED0D4AB422DF478E000887F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDBF00D022DB6AC000BFCC7A /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED0D4AB522DF4798000887F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDBF00BE22DB469800BFCC7A /* AppDelegate.swift */,
+				EDBF00C522DB469900BFCC7A /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED0D4AB622DF47A1000887F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDBF00C022DB469800BFCC7A /* ViewController.swift */,
+				EDE3EDEC22DC782E0076789D /* BookPagerController.swift */,
+				EDBF00D222DB7F0F00BFCC7A /* BookCell.swift */,
+				ED0BB27322DD19370015D580 /* PageCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EDBF00B222DB469800BFCC7A = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +90,10 @@
 		EDBF00BD22DB469800BFCC7A /* Kindle App */ = {
 			isa = PBXGroup;
 			children = (
-				EDBF00BE22DB469800BFCC7A /* AppDelegate.swift */,
-				EDBF00D022DB6AC000BFCC7A /* Models.swift */,
-				EDBF00C022DB469800BFCC7A /* ViewController.swift */,
-				EDE3EDEC22DC782E0076789D /* BookPagerController.swift */,
-				EDBF00D222DB7F0F00BFCC7A /* BookCell.swift */,
-				ED0BB27322DD19370015D580 /* PageCell.swift */,
+				ED0D4AB622DF47A1000887F1 /* Controller */,
+				ED0D4AB522DF4798000887F1 /* View */,
+				ED0D4AB422DF478E000887F1 /* Model */,
 				EDBF00C222DB469800BFCC7A /* Main.storyboard */,
-				EDBF00C522DB469900BFCC7A /* Assets.xcassets */,
 				EDBF00C722DB469900BFCC7A /* LaunchScreen.storyboard */,
 				EDBF00CA22DB469900BFCC7A /* Info.plist */,
 			);
